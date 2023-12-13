@@ -1,0 +1,18 @@
+<?php if ($block->getData('slider_title')): ?>
+    <h2 class='slider_title'>
+    <?= /* @noEscape */ $block->getData('slider_title'); ?>
+    </h2>
+<?php endif; ?>
+
+<?php $ajaxurl = $block->getAjaxUrl(); ?>
+<div id="product_slider"></div>
+
+<script type="text/x-magento-init">
+         {
+            "*": {
+                "Tractive_ProductSlider/js/productslider": {
+                    "AjaxUrl": "<?=/* @noEscape */$ajaxurl; ?>"
+                }
+            }
+        } 
+</script>

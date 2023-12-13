@@ -1,0 +1,22 @@
+{
+    "name": "tractive/module-productslider",
+    "description": "This module is developed as an interview task from Tractive to show product slider.",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Mujahidh Haseem",
+            "email": "mujahidhaseem@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Tractive\\ProductSlider\\": ""
+        }
+    }
+}

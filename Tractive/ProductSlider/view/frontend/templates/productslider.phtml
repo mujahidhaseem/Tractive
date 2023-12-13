@@ -1,0 +1,12 @@
+<?php $ajaxurl = $block->getAjaxUrl(); ?>
+<div id="product_slider"></div>
+
+<script type="text/x-magento-init">
+         {
+            "*": {
+                "Tractive_ProductSlider/js/productslider": {
+                    "AjaxUrl": "<?=/* @noEscape */$ajaxurl; ?>"
+                }
+            }
+        } 
+</script>

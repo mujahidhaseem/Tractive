@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="tractive" translate="label" sortOrder="2000">
+            <label>Tractive</label>
+        </tab>
+		<section id="productslider" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<label>Product Slider</label>
+			<tab>tractive</tab>
+			<resource>Tractive_ProductSlider::config_tractive_productslider</resource>
+			<group id="general" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>General</label>
+				<field id="enable_module" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>Enable Module</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+				</field>
+				<field id="title" type="text" sortOrder="15" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>Block Title</label>
+					<comment>* Title of the products block</comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
