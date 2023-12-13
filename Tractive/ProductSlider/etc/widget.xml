@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget id="tractive_productslider_productslider" class="Tractive\ProductSlider\Block\Widget\ProductSlider">
+		<label>Product Slider</label>
+		<description>Add a title to your product slider widget</description>
+		<parameters>
+			<parameter name="slider_title" xsi:type="text" visible="true" sort_order="10">
+				<label>Slider Title</label>
+			</parameter>
+		</parameters>
+	</widget>
+</widgets>

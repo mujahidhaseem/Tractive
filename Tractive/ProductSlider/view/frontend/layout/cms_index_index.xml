@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Tractive_ProductSlider::css/slider.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Tractive\ProductSlider\Block\ProductSlider" 
+            name="productslider" 
+            template="Tractive_ProductSlider::productslider.phtml" 
+            after="-" 
+            ifconfig="productslider/general/enable_module"
+            />
+        </referenceContainer>
+    </body>
+</page>
